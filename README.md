@@ -8,7 +8,7 @@ C#作为服务器端软件，支持Net.2.0及以上，Android支持2.3及以上�
 * 首次运行请添加新用户
 * config  查看当前运行信息
 * user    用户操作命令,别名:u
-  *add   添加一个用户,别名:a
+  * add   添加一个用户,别名:a
   * delete [name] 删除用户,别名:d
   * deleteAll     删除全部用户,别名:da
   * offline [name]        下线指定用户,别名:off
@@ -18,7 +18,7 @@ C#作为服务器端软件，支持Net.2.0及以上，Android支持2.3及以上�
 * msg     查看消息队列长度,别名:m
 * file    查看文件传输服务队列信息,别名:f
 * terminal        查看运行的终端，并进行相应操作，别名:ter,t
-  ** 支持参数: reset(重置连接表)
+  * 支持参数: reset(重置连接表)
 * exit    结束程序运行,别名:q,quit
 * startup 生成没有窗口的运行脚本，复制到启动目录实现开机启动,别名:s
 * clear   清屏，清空控制台,别名:cls,c
