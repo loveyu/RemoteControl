@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/BaseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/open_file"
+        android:singleLine="true"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/open_file"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/size"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/BaseName"
+        android:text="@string/open_file" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignRight="@+id/BaseName"
+        android:layout_below="@+id/BaseName"
+        android:paddingLeft="5dp"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#447722" />
+
+    <TextView
+        android:id="@+id/SeverPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BaseName"
+        android:layout_toLeftOf="@+id/size"
+        android:singleLine="true"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#444444" />
+
+</RelativeLayout>

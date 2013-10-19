@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/terminal_scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terminal_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/terminal_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/terminal_cmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/terminal_send"
+        android:ems="10"
+        android:hint="@string/terminal_char" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/terminal_send"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/terminal_cmd"
+        android:text="@string/send" />
+
+    <Button
+        android:id="@+id/terminal_bottom"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terminal_cmd"
+        android:layout_alignParentRight="true"
+        android:text="@string/bottom" />
+
+    <Button
+        android:id="@+id/terminal_top"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terminal_cmd"
+        android:layout_alignRight="@+id/terminal_cmd"
+        android:layout_alignTop="@+id/terminal_bottom"
+        android:text="@string/top" />
+
+    <Button
+        android:id="@+id/terminal_clear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terminal_cmd"
+        android:layout_alignTop="@+id/terminal_top"
+        android:layout_toLeftOf="@+id/terminal_top"
+        android:text="@string/clear_screen" />
+
+    <Button
+        android:id="@+id/terminal_type"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/terminal_clear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/terminal_clear"
+        android:text="@string/terminal_type_line" />
+
+</RelativeLayout>

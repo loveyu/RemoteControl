@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_file_run_cmd"
+        android:title="@string/run_cmd"/>
+    <item
+        android:id="@+id/menu_file_mkdir"
+        android:title="@string/mkdir"/>
+    <item
+        android:id="@+id/menu_file_mkfile"
+        android:title="@string/mkfile"/>
+    <item
+        android:id="@+id/menu_download"
+        android:title="@string/download_manager"/>
+    <item
+        android:id="@+id/menu_file_get_root"
+        android:title="@string/go_root_path"/>
+    <item
+        android:id="@+id/menu_file_go_back"
+        android:title="@string/go_back_main_page" />
+
+</menu>

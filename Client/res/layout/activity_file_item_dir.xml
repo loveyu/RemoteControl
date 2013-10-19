@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <CheckBox
+        android:id="@+id/a_f_t_f_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/a_f_t_f_date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/a_f_t_f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/a_f_t_f_checkbox"
+        android:layout_toRightOf="@+id/type"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#330022" />
+
+    <TextView
+        android:id="@+id/a_f_t_f_date"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignLeft="@+id/a_f_t_f_name"
+        android:layout_below="@+id/a_f_t_f_name"
+        android:layout_toLeftOf="@+id/a_f_t_f_size"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/type"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/a_f_t_f_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/dir"
+        android:src="@drawable/folder_ico" />
+
+    <TextView
+        android:id="@+id/a_f_t_f_size"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignBaseline="@+id/a_f_t_f_date"
+        android:layout_alignBottom="@+id/a_f_t_f_date"
+        android:layout_toLeftOf="@+id/a_f_t_f_checkbox"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:text="@string/empty"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#773355"
+        android:textSize="12sp" />
+
+</RelativeLayout>
